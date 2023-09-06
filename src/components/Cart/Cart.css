@@ -1,0 +1,18 @@
+.cart{
+    background-color: rgba(255, 153, 0, 0.3);;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+}
+.cart p {
+    padding: 10px 0;
+}
+.clear-btn{
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
