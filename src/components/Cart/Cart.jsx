@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashArrowUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -39,6 +40,7 @@ const Cart = ({ cart, clearCart }) => {
                 <span>clear cart</span>
                 <FontAwesomeIcon icon={faTrashArrowUp}/>
             </button>
+           <Link to='/cheekout'> <button  className='clear-btn bg-amber-400'>Cheek Out</button></Link>
         </div>
     );
 };

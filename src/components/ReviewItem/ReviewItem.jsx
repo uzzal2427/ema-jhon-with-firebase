@@ -5,7 +5,7 @@ import { faTrashArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 const ReviewItem = ({ product, removeFromCart }) => {
     console.log(product)
-    const { img, name, price, shipping, id } = product
+    const { img, name, price, shipping, _id } = product
     return (
         <div className='item-container'>
             <div className='item'>
@@ -17,7 +17,7 @@ const ReviewItem = ({ product, removeFromCart }) => {
                 </div>
             </div>
             <div>
-                <button onClick={()=> removeFromCart(id)}><FontAwesomeIcon icon={faTrashArrowUp} /></button>
+                <button onClick={()=> removeFromCart(_id)}><FontAwesomeIcon icon={faTrashArrowUp} /></button>
             </div>
         </div>
     );
